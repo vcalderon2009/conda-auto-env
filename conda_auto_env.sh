@@ -24,7 +24,7 @@ function conda_auto_env() {
       else
         # Create the environment and activate
         echo "Conda env '$ENV' doesn't exist."
-        conda env create -q
+        conda env create
         source activate $ENV
       fi
     fi
